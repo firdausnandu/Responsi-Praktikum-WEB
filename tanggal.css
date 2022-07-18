@@ -1,0 +1,47 @@
+.container {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 0px;
+    display: flex;
+    color: black;
+}
+
+.calendar {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#month-and-year {
+    height: 60px;
+}
+
+.baris {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+#printed-date {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.column {
+    flex-basis: 14%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.today {
+    background-color: #888;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>firdausnandu</title>
+	<!DOCTYPE html>
+	<link rel="stylesheet" type="text/css" href="kalkulator.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body background-image="blue.jpg">
+	<!-- membuat header pada row 1 -->
+	<div class="header">
+		<h1>NANDU WEB</h1>
+		<p>Firdaus Nandu Aryasetya</p>
+		<p>2100018045</p>
+	</div>
+	<div class="topnav">
+		<a href="lihat.php">Buku Tamu</a>
+		<a href="blue.jpg">Background</a>
+		<a href="guestbook.txt">Data Tamu</a> 
+	</div>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h2>KALKULATOR</h2>
+				<h5>Kalkulator Dengan Fungsi Evaluation</h5>
+					<form name ="cal">
+					<input type="text" name ="display">
+					<br><br>
+					<input type="button" value ="9" onclick ="cal.display.value+='9'">
+					<input type="button" value ="8" onclick ="cal.display.value+='8'">
+					<input type="button" value ="7" onclick ="cal.display.value+='7'">
+					<input type="button" value ="+" onclick ="cal.display.value+='+'">
+					<br><br>
+					<input type="button" value ="6" onclick ="cal.display.value+='6'">
+					<input type="button" value ="5" onclick ="cal.display.value+='5'">
+					<input type="button" value ="4" onclick ="cal.display.value+='4'">
+					<input type="button" value ="-" onclick ="cal.display.value+='-'">
+					<br><br>
+					<input type="button" value ="3" onclick ="cal.display.value+='3'">
+					<input type="button" value ="2" onclick ="cal.display.value+='2'">
+					<input type="button" value ="1" onclick ="cal.display.value+='1'">
+					<input type="button" value ="x" onclick ="cal.display.value+='*'">
+					<br><br>
+					<input type="button" value ="0" onclick ="cal.display.value+='0'">
+					<input type="button" value ="/" onclick ="cal.display.value+='/'">
+					<input type="button" value ="%" onclick ="cal.display.value+='%'">
+					<input type="button" value ="=" onclick ="cal.display.value =eval(cal.display.value)">
+					<br><br>
+					<input type="button" value ="DELETE" onclick ="cal.display.value=''" id="del">
+					<input type="button" value ="." onclick ="cal.display.value+='.'">
+					</form>	
+					</div>
+	<div class="card">
+		<h2>FORM PENGUNJUNG</h2> 
+		<h5>Form untuk menulis komentar</h5>
+		<form action="proses.php" method="post" name="form1" >
+		<table width="58%" border="0" align="center">
+			<tr>
+				<td>Nama Lengkap</td>
+				<td ><input name="nama" type="text" id="nama"></td>
+			</tr>
+			<tr>
+				<td>Alamat</td>
+				<td><input type="text" name="alamat" id="alamat"></td>
+			</tr>
+			<tr>
+				<td>E-Mail</td>
+				<td><input type="text" name="email" id="email"></td>
+			</tr>
+			<tr>
+				<td>Status</td>
+				<td><select name="status" id="status"><option>Menikah</option><option>Single</option></select></td>
+			</tr>
+			<tr>
+				<td>Komentar</td>
+				<td><textarea name="komentar" id="komentar"></textarea></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><input type="submit" name="Submit" value="Kirim"><input type="reset" name="Submit2" value="Batal"></td>
+			</tr>
+		</table>
+	</form>
+	<div align="center"><strong><a href="lihat.php"><font color="yellow">::Lihat Buku Tamu::</font></a></strong></div>
+		</div>	
+	<div class="aboutme">
+		<div class="card">
+		<h2>About Me</h2>
+		<div class="fakeimg" style="height:200px;"><img src="nandu.jpg" height="200px" width="300px"></div>
+		<p>Hallo, Saya Firdaus Nandu seorang Web Developer pemula yang masih belajar Pemrograman Web di Universitas.
+		Saya memiliki hobi membaca novel dan menonton film.</p>
+		</div>
+		<link rel="stylesheet" type="text/css" href="tanggal.css">
+	<div class="tanggal">
+		<div class="card">
+		<h2>Tanggal Hari Ini</h2>
+		<div class="container">
+            <div class="calendar">
+                <div class="baris" id="month-and-year">
+                    <p id="printed-date"></p>
+                </div>
+                <div class="baris" id="days-name">
+                    <div class="column">Sen</div>
+                    <div class="column">Sel</div>
+                    <div class="column">Rab</div>
+                    <div class="column">Kam</div>
+                    <div class="column">Jum</div>
+                    <div class="column">Sab</div>
+                    <div class="column">Min</div>
+                </div>
+                <div class="baris" id="dates-column"></div>
+            </div>
+        </div>
+        <script src="tanggal.js"></script>
+		</div>	
+</body>
+</html>
